@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/widgets/dashborad_view.dart';
 
 class ResponsiveDashborad extends StatelessWidget {
   const ResponsiveDashborad({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(home: DashboradView());
   }
 }
-  
