@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/dashborad_view.dart';
+import 'package:responsive_dashboard/views/dashborad_view.dart';
 
 class ResponsiveDashborad extends StatelessWidget {
   const ResponsiveDashborad({super.key});
