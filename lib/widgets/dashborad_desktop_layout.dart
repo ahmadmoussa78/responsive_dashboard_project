@@ -7,7 +7,7 @@ class DashboradDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         Expanded(child: CustomDrawer()),
         SizedBox(width: 32),

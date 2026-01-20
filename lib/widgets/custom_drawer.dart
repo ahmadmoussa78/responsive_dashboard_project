@@ -12,7 +12,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: CustomScrollView(
+      child: const CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
             child: UserInfoListTile(

@@ -29,7 +29,7 @@ class ActiveDrawerItem extends StatelessWidget {
       title: Text(drawerItemModel.title, style: AppStyles.styleSemiBold16),
       trailing: Container(
         width: 3.27,
-        decoration: BoxDecoration(color: Color(0xff4EB7F2)),
+        decoration: const BoxDecoration(color: Color(0xff4EB7F2)),
       ),
     );
   }
