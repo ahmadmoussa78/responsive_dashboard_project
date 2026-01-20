@@ -21,7 +21,10 @@ class RangeOptions extends StatelessWidget {
           const SizedBox(width: 18),
           Transform.rotate(
             angle: -1.570,
-            child: const Icon(Icons.arrow_back_ios_new_outlined),
+            child: const Icon(
+              Icons.arrow_back_ios_new_outlined,
+              color: Color(0xff064061),
+            ),
           ),
         ],
       ),
