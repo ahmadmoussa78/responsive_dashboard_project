@@ -1,7 +1,7 @@
-class UserInfoDetails {
+class UserInfoModel {
   final String image, title, subTilte;
 
-  const UserInfoDetails({
+  const UserInfoModel({
     required this.image,
     required this.title,
     required this.subTilte,

@@ -6,6 +6,7 @@ class CustomBackgroundContainer extends StatelessWidget {
     required this.child,
     this.padding,
   });
+
   final Widget child;
   final double? padding;
   @override
