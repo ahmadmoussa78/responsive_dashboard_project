@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_images.dart';
+import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/widgets/my_card_list_tile.dart';
 
 class MyCard extends StatelessWidget {
@@ -19,7 +20,30 @@ class MyCard extends StatelessWidget {
             borderRadius: BorderRadiusGeometry.circular(12),
           ),
         ),
-        child: const Column(children: [MyCardListTile()]),
+
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            const MyCardListTile(),
+            const Expanded(child: SizedBox()),
+            Padding(
+              padding: const EdgeInsets.only(right: 26),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    "0000 0000 0000 0000",
+                    style: AppStyles.styleSemiBold24.copyWith(
+                      color: Colors.white,
+                    ),
+                  ),
+                  const Text("12/20 - 124", style: AppStyles.styleRegular16),
+                ],
+              ),
+            ),
+            const SizedBox(height: 26),
+          ],
+        ),
       ),
     );
   }
