@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/utils/app_styles.dart';
+
+class IncomeSectionHeader extends StatelessWidget {
+  const IncomeSectionHeader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        const Text("Income", style: AppStyles.styleSemiBold20),
+        Container(
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+          decoration: ShapeDecoration(
+            shape: RoundedRectangleBorder(
+              side: const BorderSide(width: 1, color: Color(0XFFF1F1F1)),
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+          child: Row(
+            children: [
+              const Text("Monthly", style: AppStyles.styleMedium16),
+              const SizedBox(width: 16),
+              Transform.rotate(
+                angle: -1.570,
+                child: const Icon(Icons.arrow_back_ios_new),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
