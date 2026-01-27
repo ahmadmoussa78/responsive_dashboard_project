@@ -1,25 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
+import 'package:responsive_dashboard/widgets/trasncation_history_header.dart';
 
 class TransactionHistory extends StatelessWidget {
   const TransactionHistory({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const Text("Transaction History", style: AppStyles.styleSemiBold20),
-            Text(
-              "See All",
-              style: AppStyles.styleMedium16.copyWith(
-                color: const Color(0xff4EB7F2),
-              ),
-            ),
-          ],
-        ),
+        TransactionHistoryHeader(),
+        Text("13 April 2026", style: AppStyles.styleRegular16),
       ],
     );
   }
