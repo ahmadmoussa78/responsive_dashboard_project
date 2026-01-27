@@ -1,11 +1,11 @@
 class TranscationModel {
   final String title, date, amount;
-  final String withDrawal;
+  final bool isWithDrawal;
 
   const TranscationModel({
     required this.title,
     required this.date,
     required this.amount,
-    required this.withDrawal,
+    required this.isWithDrawal,
   });
 }
