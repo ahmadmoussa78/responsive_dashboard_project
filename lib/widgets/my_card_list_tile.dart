@@ -12,9 +12,9 @@ class MyCardListTile extends StatelessWidget {
       contentPadding: const EdgeInsets.only(left: 31, top: 16, right: 42),
       title: Text(
         "Name",
-        style: AppStyles.styleRegular16.copyWith(color: Colors.white),
+        style: AppStyles.styleRegular16(context).copyWith(color: Colors.white),
       ),
-      subtitle: Text("Syah Bandi", style: AppStyles.styleMedium20),
+      subtitle: Text("Syah Bandi", style: AppStyles.styleMedium20(context)),
       trailing: SvgPicture.asset(Assets.imagesGallery),
     );
   }

@@ -34,11 +34,12 @@ class MyCard extends StatelessWidget {
                 children: [
                   Text(
                     "0000 0000 0000 0000",
-                    style: AppStyles.styleSemiBold24.copyWith(
-                      color: Colors.white,
-                    ),
+                    style: AppStyles.styleSemiBold24(
+                      context,
+                    ).copyWith(color: Colors.white),
                   ),
-                  Text("12/20 - 124", style: AppStyles.styleRegular16),
+                   Text("12/20 - 124", style: AppStyles.styleRegular16(context),
+                  ),
                 ],
               ),
             ),

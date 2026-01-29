@@ -13,16 +13,19 @@ class TransactionItem extends StatelessWidget {
         borderRadius: BorderRadiusGeometry.circular(12),
       ),
       child: ListTile(
-        title: Text(transcationModel.title, style: AppStyles.styleSemiBold16),
+        title: Text(transcationModel.title, style: AppStyles.styleSemiBold16(context),
+        ),
         subtitle: Text(
           transcationModel.date,
-          style: AppStyles.styleRegular16.copyWith(
+          style: AppStyles.styleRegular16(
+            context,
+          ).copyWith(
             color: const Color(0xffAAAAAA),
           ),
         ),
         trailing: Text(
           transcationModel.amount,
-          style: AppStyles.styleSemiBold16.copyWith(
+          style: AppStyles.styleSemiBold16(context).copyWith(
             color: transcationModel.isWithDrawal
                 ? const Color(0xffF3735E)
                 : const Color(0xff7DD97B),
