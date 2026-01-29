@@ -14,7 +14,7 @@ class MyCardListTile extends StatelessWidget {
         "Name",
         style: AppStyles.styleRegular16.copyWith(color: Colors.white),
       ),
-      subtitle: const Text("Syah Bandi", style: AppStyles.styleMedium20),
+      subtitle: Text("Syah Bandi", style: AppStyles.styleMedium20),
       trailing: SvgPicture.asset(Assets.imagesGallery),
     );
   }

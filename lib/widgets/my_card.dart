@@ -38,7 +38,7 @@ class MyCard extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  const Text("12/20 - 124", style: AppStyles.styleRegular16),
+                  Text("12/20 - 124", style: AppStyles.styleRegular16),
                 ],
               ),
             ),
