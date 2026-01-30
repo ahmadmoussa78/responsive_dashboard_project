@@ -17,11 +17,11 @@ class IncomeSectionBody extends StatelessWidget {
             child: DetailedIncomeChart(),
           )
         : const SizedBox(
-            height: 200,
+            height: 250,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Expanded(child: IncomeChart()),
+                Expanded(flex: 1, child: IncomeChart()),
                 Expanded(flex: 2, child: IncomeDetails()),
               ],
             ),
